@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "2js": "babel --presets react,es2015 src --out-dir buildReact",
-    "pack": "webpack buildReact/app.js build/bundle.js",
+    "pack": "webpack buildReact/app.js build/bundle.js"
   },
   "repository": {
     "type": "git",
