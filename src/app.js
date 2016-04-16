@@ -15,17 +15,20 @@
   var injectTapEventPlugin = require("react-tap-event-plugin");
   injectTapEventPlugin();
 
+
   // Application
+  var AppControllerView = require('./component/AppControllerView.react');
+  var Home = require('./component/Home.react');
+  //var HomeControllerView = require('./component/controllerViewHome.react');
+  //var SeeAllControllerView = require('./component/controllerViewSeeAll.react');
+  //var AddNewControllerView = require('./component/controllerViewAddNew.react');
 
   // routes
-  routes = (
+  var routes = (
     <Route path="/" component={AppControllerView}>
-      <IndexRoute component={BootControllerView} />
-      <Route path="home" component={HomeControllerView} />
-      <Route path="see" component={SeeAllControllerView} />
-      <Route path="add" component={AddNewControllerView} />
+      <IndexRoute component={Home} />
     </Route>
   );
 
-  var App = ReactDOM.render(<div>React!</div>,document.getElementById('react-app'));
+  var App = ReactDOM.render(<Router routes={routes} history={hashHistory} />,document.getElementById('react-app'));
 })();
