@@ -1,4 +1,4 @@
-React 0.15.0 001
+React MatgerialUI
 ================
 ### Making the application
 - npm init
@@ -23,6 +23,7 @@ React 0.15.0 001
 
 ### installing material-ui
 Directly from github
-`npm install --save git://github.com/callemall/material-ui.git#v0.15.0-beta.1`
+ `npm install --save git://github.com/callemall/material-ui.git#v0.15.0-beta.1`
+
 A particular version
-`npm install --save material-ui@0.15.0-beta.1`
+ `npm install --save material-ui@0.15.0-beta.1`
