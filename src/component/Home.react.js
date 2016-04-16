@@ -4,6 +4,7 @@
  */
 var React = require ('react');
 import RaisedButton from 'material-ui/RaisedButton';
+// var AppBar = require('material-ui/AppBar')['default'] ;
 //
 var Home = React.createClass({
   contextTypes: {

@@ -10,7 +10,11 @@ var IndexLink = require('react-router').IndexLink;
 var browserHistory = require('react-router').browserHistory;
 // react material-ui
 //var AppBar = require('material-ui/AppBar') ;// this way throws Error !
-import AppBar from 'material-ui/AppBar';// changes for material-ui 0.15.0-beta-1
+//import AppBar from 'material-ui/AppBar';// changes for material-ui 0.15.0-beta-1
+
+// ref : https://github.com/callemall/material-ui/issues/4017
+var AppBar = require('material-ui/AppBar')['default'] ;
+
 import FlatButton from 'material-ui/FlatButton';
 import RaisedButton from 'material-ui/RaisedButton';
 import FloatingActionButton from 'material-ui/FloatingActionButton';
