@@ -1,5 +1,12 @@
 React MatgerialUI
 ================
+### installing a particular version of a package
+Directly from github          
+`npm install --save git://github.com/callemall/material-ui.git#v0.15.0-beta.1`
+
+A particular version          
+`npm install --save material-ui@0.15.0-beta.1`
+
 ### Making the application
 - npm init
 - add .gitignore
@@ -20,10 +27,3 @@ React MatgerialUI
  - npm install react-tap-event-plugin --save
 
  - npm install underscore --save
-
-### installing material-ui
-Directly from github
- `npm install --save git://github.com/callemall/material-ui.git#v0.15.0-beta.1`
-
-A particular version
- `npm install --save material-ui@0.15.0-beta.1`
