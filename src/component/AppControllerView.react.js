@@ -31,7 +31,7 @@ import ContentAdd from 'material-ui/svg-icons/content/add';
 
 
 // changes for material-ui 0.15.0-beta-1
-import baseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
+import baseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
 // Component declaration
