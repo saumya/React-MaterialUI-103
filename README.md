@@ -21,4 +21,8 @@ React 0.15.0 001
 
  - npm install underscore --save
 
-npm install https://github.com/callemall/material-ui/releases/tag/v0.15.0-beta.1 --save
+### installing material-ui
+Directly from github
+`npm install --save git://github.com/callemall/material-ui.git#v0.15.0-beta.1`
+A particular version
+`npm install --save material-ui@0.15.0-beta.1`
