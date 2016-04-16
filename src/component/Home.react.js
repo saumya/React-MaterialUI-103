@@ -1,9 +1,9 @@
 /*
- * Application Entry
+ * Home View Component
  *
  */
 var React = require ('react');
-
+import RaisedButton from 'material-ui/RaisedButton';
 //
 var Home = React.createClass({
   contextTypes: {
@@ -11,8 +11,13 @@ var Home = React.createClass({
   },
   render: function(){
     var that = this;
+    const style = {
+      margin: 12,
+    };
     return(
-      <div>Home</div>
+      <div>Home
+        <RaisedButton label="Primary" primary={true} style={style} />
+      </div>
     );
   },
 });
