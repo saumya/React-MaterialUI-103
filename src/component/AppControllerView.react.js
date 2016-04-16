@@ -9,8 +9,8 @@ var Link = require('react-router').Link;
 var IndexLink = require('react-router').IndexLink;
 var browserHistory = require('react-router').browserHistory;
 // react material-ui
-var AppBar = require('material-ui/AppBar') ;
-//import AppBar from 'material-ui/AppBar';
+//var AppBar = require('material-ui/AppBar') ;// this way throws Error !
+import AppBar from 'material-ui/AppBar';// changes for material-ui 0.15.0-beta-1
 import FlatButton from 'material-ui/FlatButton';
 import RaisedButton from 'material-ui/RaisedButton';
 // changes for material-ui 0.15.0-beta-1
@@ -39,6 +39,7 @@ var AppControllerView = React.createClass({
         <RaisedButton label="Secondary" secondary={true} />
         <FlatButton label="FlatButton" />
         <RaisedButton label="Primary" primary={true} />
+        <AppBar title="Title" iconClassNameRight="muidocs-icon-navigation-expand-more" />
         { /* renders the children */ this.props.children }
       </div>
     );
