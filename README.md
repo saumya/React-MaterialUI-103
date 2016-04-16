@@ -1,5 +1,7 @@
 React MaterialUI
 ================
+material-ui [v0.15.0-beta.1][2]
+
 ### installing a particular version of a package
 Directly from github          
 `npm install --save git://github.com/callemall/material-ui.git#v0.15.0-beta.1`
@@ -27,3 +29,7 @@ A particular version
  - npm install react-tap-event-plugin --save
 
  - npm install underscore --save
+
+
+
+[2]: https://github.com/callemall/material-ui/releases/tag/v0.15.0-beta.1
