@@ -12,8 +12,8 @@
   var hashHistory = require('react-router').hashHistory;
   // materia-ui
   // ref : https://www.npmjs.com/package/react-tap-event-plugin
-  var injectTapEventPlugin = require("react-tap-event-plugin");
-  injectTapEventPlugin();
+  //var injectTapEventPlugin = require("react-tap-event-plugin");
+  //injectTapEventPlugin();
 
 
   // Application

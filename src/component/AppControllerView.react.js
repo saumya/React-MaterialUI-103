@@ -9,9 +9,8 @@ var Link = require('react-router').Link;
 var IndexLink = require('react-router').IndexLink;
 var browserHistory = require('react-router').browserHistory;
 // react material-ui
-import mui from 'material-ui';
-//var AppBar = require('material-ui/AppBar') ;
-import AppBar from 'material-ui/AppBar';
+var AppBar = require('material-ui/AppBar') ;
+//import AppBar from 'material-ui/AppBar';
 
 //
 var AppControllerView = React.createClass({
