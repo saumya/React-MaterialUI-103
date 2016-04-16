@@ -47,11 +47,7 @@ var AppControllerView = React.createClass({
     return {muiTheme: getMuiTheme(baseTheme)};
   },
   // changes for material-ui 0.15.0-beta-1
-  styles: {
-    title: {
-      cursor: 'pointer',
-    },
-  },
+  
 
   render: function(){
     var that = this;
@@ -59,11 +55,14 @@ var AppControllerView = React.createClass({
       position: 'absolute',
       bottom:20,
       right:20,
+      title: {
+        cursor: 'pointer',
+      },
     };
     return(
       <nav>
           <AppBar
-            title={<span style={that.styles.title}>My App Bar</span>}
+            title={<span style={style.title}>My App Bar</span>}
             iconElementRight={<FlatButton label="Done" />} />
           <Drawer docked={false} width={300} swipeAreaWidth={100} open={false} >
               <MenuItem>Profile</MenuItem>
