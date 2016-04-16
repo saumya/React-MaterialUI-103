@@ -13,6 +13,19 @@ var browserHistory = require('react-router').browserHistory;
 import AppBar from 'material-ui/AppBar';// changes for material-ui 0.15.0-beta-1
 import FlatButton from 'material-ui/FlatButton';
 import RaisedButton from 'material-ui/RaisedButton';
+import FloatingActionButton from 'material-ui/FloatingActionButton';
+
+//import LeftNav from 'material-ui/left-nav';
+import Drawer from 'material-ui/Drawer';// previously left-nav
+import Menu from 'material-ui/Menu';
+import MenuItem from 'material-ui/MenuItem';
+import ContentAdd from 'material-ui/svg-icons/content/add';
+
+//import HardwareVideogameAsset from 'material-ui/svg-icons/hardware/videogame-asset';
+
+
+
+
 // changes for material-ui 0.15.0-beta-1
 import baseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
@@ -30,18 +43,36 @@ var AppControllerView = React.createClass({
     return {muiTheme: getMuiTheme(baseTheme)};
   },
   // changes for material-ui 0.15.0-beta-1
+  styles: {
+    title: {
+      cursor: 'pointer',
+    },
+  },
 
   render: function(){
     var that = this;
+    var style = {
+      position: 'absolute',
+      bottom:20,
+      right:20,
+    };
     return(
-      <div>
-        <div>Application View</div>
-        <RaisedButton label="Secondary" secondary={true} />
-        <FlatButton label="FlatButton" />
-        <RaisedButton label="Primary" primary={true} />
-        <AppBar title="Title" iconClassNameRight="muidocs-icon-navigation-expand-more" />
-        { /* renders the children */ this.props.children }
-      </div>
+      <nav>
+          <AppBar
+            title={<span style={that.styles.title}>My App Bar</span>}
+            iconElementRight={<FlatButton label="Done" />} />
+          <Drawer docked={false} width={300} swipeAreaWidth={100} open={false} >
+              <MenuItem>Profile</MenuItem>
+              <MenuItem>View All Items</MenuItem>
+              <MenuItem>Logout</MenuItem>
+          </Drawer>
+
+          { /* renders the children */ this.props.children }
+
+          <FloatingActionButton mini={false} secondary={false} style={style}>
+            <ContentAdd />
+          </FloatingActionButton>
+      </nav>
     );
   },
 });
