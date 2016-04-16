@@ -11,12 +11,22 @@ var browserHistory = require('react-router').browserHistory;
 // react material-ui
 var AppBar = require('material-ui/AppBar') ;
 //import AppBar from 'material-ui/AppBar';
+import FlatButton from 'material-ui/FlatButton';
+
+import baseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
 //
 var AppControllerView = React.createClass({
   contextTypes: {
     router: React.PropTypes.object.isRequired,
-    muiTheme: React.PropTypes.object,
+  },
+
+  childContextTypes:{
+    muiTheme: React.PropTypes.object.isRequired,
+  },
+  getChildContext() {
+    return {muiTheme: getMuiTheme(baseTheme)};
   },
 
   render: function(){
@@ -24,6 +34,7 @@ var AppControllerView = React.createClass({
     return(
       <div>
         <div>Application View</div>
+        <FlatButton label="Default" />
         { /* renders the children */ this.props.children }
       </div>
     );
