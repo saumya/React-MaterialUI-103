@@ -1,0 +1,4 @@
+/*
+ * Application Entry
+ */
+ (function(){})();
