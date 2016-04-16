@@ -1,4 +1,4 @@
-React MatgerialUI
+React MaterialUI
 ================
 ### installing a particular version of a package
 Directly from github          
