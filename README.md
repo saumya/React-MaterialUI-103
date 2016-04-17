@@ -2,7 +2,7 @@ React MaterialUI
 ================
 material-ui [v0.15.0-beta.1][2]
 
-There are [breaking changes and there are good reasons][3] for it.
+There are [breaking changes][4] and [there are good reasons][3] for it.
 
 The previously used `require` has to be [updated as suggested][1].
 ```
@@ -45,3 +45,4 @@ A particular version
 [1]: https://github.com/callemall/material-ui/issues/4017
 [2]: https://github.com/callemall/material-ui/releases/tag/v0.15.0-beta.1
 [3]: https://github.com/callemall/material-ui/pull/3820
+[4]: https://github.com/callemall/material-ui/releases/tag/v0.15.0-beta.1
